@@ -55,7 +55,7 @@
 .boxContainer .box {
     border: 1px solid #C8C8C8;
     cursor: pointer;
-    padding: 10px 0px 20px;
+    padding: 10px;
     border-radius: 5px;
 }
 
@@ -201,6 +201,7 @@
 
 .dropdownContent.show {
     display: block;
+    padding-bottom: 10px;
 }
 
 .boxFooterInfo {
