@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    border-bottom: 3px solid #000;
+    display: inline-block;
+    width: 5%;
+    position: absolute;
+    bottom: -5px;
+    left: 48%;
+}
+
+.btnContainer {
+    text-align: center;
+    margin: 30px auto 50px;
+    padding: 0 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-Option {
+    background-color: transparent;
+    border: 2px solid burlywood;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+    color: teal;
+    transition: 0.5s;
+}
+
+.btn-Option:hover {
+    background-color: burlywood;
+    color: #fff;
+}
+
+.btn-Option:focus-visible {
+    outline: none;
+}
+
+.menuItem {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 75px;
+}
+
+.menuList {
+    display: flex;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.imgCont img {
+    width: 200px;
+    height: 150px;
+    border: 3px solid burlywood;
+    border-radius: 5px;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 0;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.itemTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted rgb(173, 164, 164);
+    padding-bottom: 5px;
+}
+
+.title {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: forestgreen;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: rgb(155, 55, 55);
+    font-weight: 500;
+}
+
+.desc {
+    font-size: 18px;
+    color: steelblue;
+    font-weight: 500;
+}
+
+.desc::first-letter {
+    text-transform: uppercase;
+}
+
+@media(max-width: 1200px) {
+    .menuItem {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuList {
+        width: 100%;
+    }
+
+    .btnContainer {
+        gap: 10px;
+    }
+}
