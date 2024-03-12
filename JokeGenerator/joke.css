@@ -18,10 +18,8 @@
     border-radius: 5px;
 }
 
-.emoji .fa-regular {
-    font-size: 45px;
-    transform: rotate(45deg);
-    color: rgb(238, 238, 8);
+.emoji {
+    font-size: 35px;
 }
 
 .jokeCont {
@@ -47,10 +45,16 @@
     animation: spin 2s linear infinite;
     margin: auto;
     margin-top: 30px;
-    display: none; /* initially hidden */
+    display: none;
+    /* initially hidden */
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
