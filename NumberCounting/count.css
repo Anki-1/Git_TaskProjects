@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(8, 8, 29);
+  color: #fff;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 80px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid green;
+  width: 25%;
+  padding: 25px;
+}
+
+.logo {
+  font-size: 35px;
+  color: rgb(48, 180, 48);
+}
+
+.count {
+  font-size: 29px;
+}
+
+.info {
+  font-size: 22px;
+}
