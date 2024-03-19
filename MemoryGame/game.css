@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+  font-size: 28px;
+  margin: 50px 0 20px;
+}
+
+.gameContainer {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.cardImg {
+  width: 150px;
+  cursor: pointer;
+}
+
+.pointer {
+  pointer-events: none;
+}
