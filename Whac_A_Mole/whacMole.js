@@ -4,7 +4,7 @@ const time = document.querySelector("#time");
 const boxes = document.querySelectorAll(".box");
 
 let point = 0;
-let timer = 20;
+let timer = 60;
 let isGameOver = false;
 let lastMoleClicked = null;
 
