@@ -26,6 +26,8 @@ const countDown = function () {
     time.textContent = timer;
     if (timer === 0) {
       clearInterval(timerID);
+      time.classList.add('over');
+      time.textContent = 'Game Over';
       isGameOver = true;
       whacMoleContainer.removeEventListener("click", handleMoleClick);
     }

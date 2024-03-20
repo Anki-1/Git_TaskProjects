@@ -28,3 +28,7 @@ h2 {
     background-repeat: no-repeat;
     background-position: top center;
 }
+
+.over {
+    color: rgb(255, 68, 68);
+}
