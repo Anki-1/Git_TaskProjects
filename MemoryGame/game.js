@@ -89,8 +89,9 @@ const checkMatch = function () {
       "src",
       "https://github.com/kubowania/memory-game/blob/master/images/white.png?raw=true"
     );
-    cards[cardIDArr[0]].removeEventListener("click", flipCard);
-    cards[cardIDArr[1]].removeEventListener("click", flipCard);
+    
+    cards[cardIDArr[0]].classList.add('pointer');
+    cards[cardIDArr[1]].classList.add('pointer');
   } else {
     cards[cardIDArr[0]].setAttribute(
       "src",
