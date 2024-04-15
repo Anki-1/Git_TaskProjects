@@ -7,7 +7,6 @@ const highScore = document.querySelector(".highScore span");
 const btnAgain = document.querySelector(".btn-again");
 
 let randomNum = Math.trunc(Math.random() * 20) + 1;
-console.log(randomNum);
 let score = 20;
 let highScores = 0;
 
@@ -53,7 +52,6 @@ const matchGuessNum = function () {
 
 const resetGame = function () {
   randomNum = Math.trunc(Math.random() * 20) + 1;
-  console.log(randomNum);
   guessNum.textContent = "?";
   score = 20;
   scoreNum.textContent = score;
