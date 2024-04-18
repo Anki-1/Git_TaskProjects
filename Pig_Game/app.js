@@ -63,7 +63,7 @@ const totalScore = function () {
       total_count[activePlayer];
 
     // POINT CHECK 100
-    if (total_count[activePlayer] >= 20) {
+    if (total_count[activePlayer] >= 100) {
       isPlaying = false;
       diceImg.classList.add("hidden");
       document
@@ -90,19 +90,14 @@ const resetGame = function () {
   current_count = 0;
 
   // REMOVE ACTIVE CLASS
-  document
-    .querySelectorAll(".player")
-    .forEach((player) => player.classList.remove("player-active"));
+  player1.classList.remove("player-active");
 
     // ADD ACTIVE CLASS TO PLAYER 1
-  document
-    .querySelector(`.player--${activePlayer}`)
-    .classList.add("player-active");
+  player0.classList.add("player-active");
 
     // REMOVE WINNER CLASS
-  document
-    .querySelector(`.player--${activePlayer}`)
-    .classList.remove("player-winner");
+  player0.classList.remove("player-winner");
+  player1.classList.remove("player-winner");
 };
 
 rollDice.addEventListener("click", generatePoints);
