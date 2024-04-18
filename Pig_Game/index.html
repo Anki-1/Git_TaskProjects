@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>PIG GAME</title>
+</head>
+
+<body>
+
+    <section class="section-container">
+        <div class="container">
+
+            <div class="grid">
+                <div class="player player--0 player-active">
+                    <h1 class="player-title">player 1</h1>
+                    <p class="score" id="score-0">0</p>
+                    <div class="current-point">
+                        <p class="current">current</p>
+                        <p class="point" id="point-0">0</p>
+                    </div>
+                </div>
+
+                <div class="player player--1">
+                    <h1 class="player-title">player 2</h1>
+                    <p class="score" id="score-1">0</p>
+                    <div class="current-point">
+                        <p class="current">current</p>
+                        <p class="point" id="point-1">0</p>
+                    </div>
+                </div>
+            </div>
+
+            <img src="https://github.com/jonasschmedtmann/complete-javascript-course/blob/master/07-Pig-Game/starter/dice-1.png?raw=true"
+                alt="dice-img" class="dice-img btn hidden">
+            <button class="btn new-game">🔃 New Game</button>
+            <button class="btn roll-dice">🎲 Roll dice</button>
+            <button class="btn hold">⏹ hold</button>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
