@@ -46,10 +46,6 @@ const generatePoints = function () {
       document.querySelector(`#point-${activePlayer}`).textContent =
         current_count;
     } else {
-      // TOTAL SCORE
-      total_count[activePlayer] += current_count;
-      document.querySelector(`#score-${activePlayer}`).textContent =
-        total_count[activePlayer];
       switchPlayer();
     }
   }
@@ -92,10 +88,10 @@ const resetGame = function () {
   // REMOVE ACTIVE CLASS
   player1.classList.remove("player-active");
 
-    // ADD ACTIVE CLASS TO PLAYER 1
+  // ADD ACTIVE CLASS TO PLAYER 1
   player0.classList.add("player-active");
 
-    // REMOVE WINNER CLASS
+  // REMOVE WINNER CLASS
   player0.classList.remove("player-winner");
   player1.classList.remove("player-winner");
 };
